@@ -6,13 +6,14 @@ namespace RotateTable
     {
         static void Main(string[] args) 
         {
-            int[] table = new int[100];
+            int[] table = new int[100]; //change at will
             for (int i = 0; i < table.Length; i++) {
                 table[i] = i+1;
             }
 
+            int turns = 65; //change value at will
             WriteArray(table);
-            Rotate_Table(table, 65);
+            Rotate_Table(table, turns);
             WriteArray(table);
         }
 
